@@ -1,0 +1,19 @@
+tt_content.minigallery_minigallery = FLUIDTEMPLATE
+tt_content.minigallery_minigallery {
+    layoutRootPaths.0 = EXT:minigallery/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_minigallery.view.layoutRootPath}
+    partialRootPaths.0 = EXT:minigallery/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_minigallery.view.partialRootPath}
+    templateRootPaths.0 = EXT:minigallery/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_minigallery.view.templateRootPath}
+    templateName = Minigallery
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_minigallery_images
+        references {
+            fieldName = tx_minigallery_images
+            table = tt_content
+        }
+        as = data_tx_minigallery_images
+    }
+}

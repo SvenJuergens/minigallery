@@ -1,0 +1,15 @@
+<f:if condition="{data.tx_minigallery_imagecomposition}">
+    <f:switch expression="{data.tx_minigallery_imagecomposition}">
+        <f:case value="1">Value is: 1</f:case>
+        <f:case value="2">Value is: 2</f:case>
+        <f:case value="3">Value is: 3</f:case>
+    </f:switch><br />
+</f:if>
+
+<f:if condition="{data_tx_minigallery_images}">
+    <f:for each="{data_tx_minigallery_images}" as="file">
+        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
+        {file.description} / {file.identifier}<br />
+    </f:for>
+</f:if>
+

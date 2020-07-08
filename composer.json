@@ -1,0 +1,22 @@
+{
+    "name": "svenjuergens/minigallery",
+    "description": "",
+    "type": "typo3-cms-extension",
+    "license": "GPL-2.0-or-later",
+    "require": {
+		"typo3/cms-core": "^9.5.18 || ^10.4.4"
+	},
+    "replace": {
+        "typo3-ter/minigallery": "self.version"
+    },
+    "autoload": {
+        "psr-4": {
+            "SvenJuergens\\Minigallery\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "minigallery"
+        }
+    }
+}

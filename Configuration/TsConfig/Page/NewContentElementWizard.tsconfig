@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+            minigallery {
+                iconIdentifier = tx_minigallery_minigallery
+                title = LLL:EXT:minigallery/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.minigallery_title
+                description = LLL:EXT:minigallery/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.minigallery_description
+                tt_content_defValues {
+                    CType = minigallery_minigallery
+                }
+            }
+    }
+    show := addToList(minigallery)
+}

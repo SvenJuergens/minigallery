@@ -1,0 +1,8 @@
+# cat=minigallery/file; type=string; label=Path to template root (FE)
+plugin.tx_minigallery.view.templateRootPath =
+
+# cat=minigallery/file; type=string; label=Path to template partials (FE)
+plugin.tx_minigallery.view.partialRootPath =
+
+# cat=minigallery/file; type=string; label=Path to template layouts (FE)
+plugin.tx_minigallery.view.layoutRootPath =
