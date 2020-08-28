@@ -17,10 +17,5 @@ call_user_func(function () {
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
         '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:minigallery/Configuration/TsConfig/Page/NewContentElementWizard.tsconfig">'
     );
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-        '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:minigallery/Configuration/TsConfig/Page/BackendPreview.tsconfig">'
-    );
-    // Add backend preview hook
-    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['minigallery'] =
-    SvenJuergens\Minigallery\Hooks\PageLayoutViewDrawItem::class;
+
 });

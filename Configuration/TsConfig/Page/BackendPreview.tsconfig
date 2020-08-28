@@ -1,3 +1,0 @@
-mod.web_layout.tt_content.preview.minigallery.templateRootPath = EXT:minigallery/Resources/Private/Backend/Templates/Content/
-mod.web_layout.tt_content.preview.minigallery.layoutRootPath = EXT:minigallery/Resources/Private/Backend/Layout/
-mod.web_layout.tt_content.preview.minigallery.partialRootPath = EXT:minigallery/Resources/Private/Backend/Partials/
