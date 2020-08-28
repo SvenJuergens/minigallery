@@ -37,7 +37,7 @@
         <div class="masonry">
             <f:for each="{data_tx_minigallery_images}" as="file" iteration="iterator">
                 <div class="masonry-item item{iterator.cycle}">
-                    <f:image image="{file}" alt="{file.alternative}" title="{file.title}" maxWidth="630" class="masonry-content"/>
+                    <f:image image="{file}" alt="{file.alternative}" title="{file.title}" maxWidth="630" maxHeight="800" class="masonry-content"/>
                 </div>
             </f:for>
         </div>
