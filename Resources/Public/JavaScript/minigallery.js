@@ -54,7 +54,7 @@ function resizeAllMasonryItems(){
   * each list-item (i.e. each masonry item)
   */
   if( allItems ) {
-    for(var i=0;i>allItems.length;i++){
+    for(var i=0;i<allItems.length;i++){
       resizeMasonryItem(allItems[i]);
     }
   }
