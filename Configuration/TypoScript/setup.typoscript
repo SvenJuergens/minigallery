@@ -2,24 +2,25 @@ tt_content.minigallery_minigallery >
 tt_content.minigallery_minigallery =< lib.contentElement
 tt_content.minigallery_minigallery {
 
-   layoutRootPaths.100 = EXT:minigallery/Resources/Private/Layouts/
-   layoutRootPaths.101 = {$plugin.tx_minigallery.view.layoutRootPath}
+  layoutRootPaths.100 = EXT:minigallery/Resources/Private/Layouts/
+  layoutRootPaths.101 = {$plugin.tx_minigallery.view.layoutRootPath}
 
-    partialRootPaths.100 = EXT:minigallery/Resources/Private/Partials/
-    partialRootPaths.101 = {$plugin.tx_minigallery.view.partialRootPath}
+  partialRootPaths.100 = EXT:minigallery/Resources/Private/Partials/
+  partialRootPaths.101 = {$plugin.tx_minigallery.view.partialRootPath}
 
-    templateRootPaths.100 = EXT:minigallery/Resources/Private/Templates/Content/
-    templateRootPaths.101 = {$plugin.tx_minigallery.view.templateRootPath}
+  templateRootPaths.100 = EXT:minigallery/Resources/Private/Templates/Content/
+  templateRootPaths.101 = {$plugin.tx_minigallery.view.templateRootPath}
 
-    templateName = Minigallery
+  templateName = Minigallery
 
-    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-    dataProcessing.10 {
-        if.isTrue.field = tx_minigallery_images
-        references {
-            fieldName = tx_minigallery_images
-            table = tt_content
-        }
-        as = data_tx_minigallery_images
+  dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+  dataProcessing.10 {
+    if.isTrue.field = tx_minigallery_images
+    references {
+      fieldName = tx_minigallery_images
+      table = tt_content
     }
+
+    as = data_tx_minigallery_images
+  }
 }
