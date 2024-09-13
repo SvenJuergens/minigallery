@@ -3,7 +3,7 @@
 defined('TYPO3') || die();
 
 call_user_func(function () {
-    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['minigallery_minigallery'] = 'tx_minigallery_minigallery';
+    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['minigallery_minigallery'] = 'content-image';
     $tempColumns = [
         'tx_minigallery_imagecomposition' => [
             'config' => [
@@ -98,7 +98,7 @@ call_user_func(function () {
     $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
         'LLL:EXT:minigallery/Resources/Private/Language/locallang_db.xlf:tt_content.CType.minigallery_minigallery',
         'minigallery_minigallery',
-        'tx_minigallery_minigallery',
+        'content-image',
     ];
     $tempTypes = [
         'minigallery_minigallery' => [
