@@ -114,9 +114,5 @@ call_user_func(function () {
         ],
     ];
     $GLOBALS['TCA']['tt_content']['types'] += $tempTypes;
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-        'minigallery',
-        'Configuration/TypoScript/',
-        'minigallery'
     );
 });
