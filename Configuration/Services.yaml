@@ -1,0 +1,14 @@
+services:
+  # general settings
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  SvenJuergens\Minigallery\:
+    resource: '../Classes/*'
+
+  SvenJuergens\Minigallery\Backend\EventListener\PageContentPreviewRenderingEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'minigallery/preview-rendering-minigallery-ctype'

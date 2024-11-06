@@ -7,7 +7,7 @@
         <source>AusgabeForm</source>
       </trans-unit>
       <trans-unit id="tt_content.tx_minigallery_images">
-        <source></source>
+        <source>MiniGallery Images</source>
       </trans-unit>
       <trans-unit id="tt_content.tx_minigallery_imagecomposition.I.0">
         <source>CSS GridLayout</source>
