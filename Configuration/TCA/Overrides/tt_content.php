@@ -57,8 +57,8 @@ call_user_func(function () {
                 'config' => [
                     'items' => [
                         [
-                            'LLL:EXT:minigallery/Resources/Private/Language/locallang_db.xlf:tt_content.tx_minigallery_imagecomposition.I.0',
-                            '1',
+                            'label' => 'LLL:EXT:minigallery/Resources/Private/Language/locallang_db.xlf:tt_content.tx_minigallery_imagecomposition.I.0',
+                            'value' => '1',
                         ],
                     ],
                     'renderType' => 'selectSingle',
@@ -119,11 +119,6 @@ call_user_func(function () {
                     ],
                     'appearance' => [
                         'useSortable' => '1',
-                        'headerThumbnail' => [
-                            'field' => 'uid_local',
-                            'width' => '45',
-                            'height' => '45c',
-                        ],
                         'enabledControls' => [
                             'info' => 'tx_minigallery_images',
                             'new' => false,
@@ -132,7 +127,6 @@ call_user_func(function () {
                             'hide' => 'tx_minigallery_images',
                             'delete' => 'tx_minigallery_images',
                         ],
-                        'fileUploadAllowed' => '1',
                     ],
                 ],
                 'exclude' => '1',
